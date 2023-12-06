@@ -82,7 +82,7 @@ for col in columns:
 tree.pack(pady=10)
 
 # Подключаем базу данных
-conn = sqlite3.connect('C:/Users/User/Documents/service_records.db')
+conn = sqlite3.connect('service_records.db')
 cursor = conn.cursor()
 
 # Запускаем главный цикл

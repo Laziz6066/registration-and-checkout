@@ -5,7 +5,7 @@ from tkinter import ttk
 
 def fetch_data_and_update_gui():
     global total_cash_sum_all_dates, total_plastic_sum_all_dates
-    conn = sqlite3.connect('C:/Users/User/Documents/service_records.db')
+    conn = sqlite3.connect('service_records.db')
     cursor = conn.cursor()
 
     dates_query = '''

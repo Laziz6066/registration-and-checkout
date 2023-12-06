@@ -57,7 +57,7 @@ class ClientApp:
         self.submit_button.config(state="disabled")
 
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server_address = ("192.168.100.208", 8080)
+        server_address = ("192.168.100.42", 8080)
         sock.connect(server_address)
 
         sock.sendall(self.data.encode())
